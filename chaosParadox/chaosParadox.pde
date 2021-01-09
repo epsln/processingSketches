@@ -1,7 +1,6 @@
 //This sketch is inspired by the paper Pattern and Chaos : New Images in the Semantics of Paradox
-//https://pdfs.semanticscholar.org/c14b/baa0cf8a198c6069eec278eea39ca0490374.pdf
+//https://pdfs.semanticscholar.org/c14bc6069eec278eea39ca0490374.pdf
 //Which shows that chaotic behavior can emerge in pardoxes using infinite valued logic
-//
 
 PShader fractal;
 float heightF;
@@ -26,5 +25,5 @@ void draw() {
   rect(0,0,width,height);
   fractal.set("iResolution", heightF, widthF);
   //set shader variables
-  saveFrame("image.jpg");
+  //saveFrame("dualistChaos.jpg");
 }
