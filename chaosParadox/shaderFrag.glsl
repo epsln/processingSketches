@@ -42,7 +42,6 @@ void main() {
 
 	vec2 z0 = vec2(x0, y0);
 	int iter = 50;
-	//float i = float(func(z0, iter));
 	float i = simpleDualist(z0, iter);
 	i = i/iter;
 	gl_FragColor = vec4(i, i, i, 1.0);

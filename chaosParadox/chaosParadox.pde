@@ -25,5 +25,5 @@ void draw() {
   rect(0,0,width,height);
   fractal.set("iResolution", heightF, widthF);
   //set shader variables
-  //saveFrame("dualistChaos.jpg");
+  saveFrame("dualistChaos.jpg");
 }
