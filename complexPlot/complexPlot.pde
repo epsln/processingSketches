@@ -2,7 +2,7 @@ PShader fractal;
 float heightF;
 float widthF;
 
-int iterMax = 2;
+int iterMax = 5;
 PVector rParam;
 
 void setup() {
@@ -28,7 +28,7 @@ void draw() {
   //rParam.x = map(frameCount, 0, 60*5, 2, 4);
   if (frameCount%(60 * 5)== 0){
      println("Framecount: ", frameCount);
-     iterMax+= 3;
+     iterMax += 3;
      fractal.set("iterMax", iterMax);
   }
   fractal.set("r", rParam);
