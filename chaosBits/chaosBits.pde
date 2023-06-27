@@ -3,10 +3,10 @@ float iTime;
 int nBit;
 
 void setup(){
-  size(720, 720, P2D);
+  size(1080, 1080, P2D);
   stroke(255);
   background(0);
-  frameRate(60);
+  frameRate(5);
 
   iTime = millis()/1000;
 
@@ -27,7 +27,9 @@ void draw(){
   bitShader.set("iTime", iTime);
   bitShader.set("nBit", nBit);
 
+ nBit += 1 % 32;
   //Uncomment me if you want to save the frame :)
- //saveFrame("out/img_##.jpg");
+// if (frameCount > 32) exit(); 
+ saveFrame("out/img_##.jpg");
   
 }
