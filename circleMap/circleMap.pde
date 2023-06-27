@@ -16,6 +16,6 @@ void draw(){
   rect(0, 0, width, height);
   circleShader.set("res", float(width), float(height));
   circleShader.set("maxiter", 1000);
-  //saveFrame("output/FHD.jpg");
-  //exit();
+  saveFrame("output/FHD.jpg");
+  exit();
 }
