@@ -30,18 +30,15 @@ void draw(){
         x = map(j, -MAXINT,MAXINT, 0, width); 
         y = map(i, -MAXINT,MAXINT, height, 0); 
         if (i != 0 && j != 0 && checkPrime(i*i+j*j) == 1){
-        println("0", i, j);
           point(x,y);
           continue;
         }
         else if (i == 0 && checkPrime(abs(j)) == 1 && abs(j) % 4 == 3){
-        println("1", i, j);
           point(x,y);
           continue;
         }
         else if (j == 0 && checkPrime(abs(i)) == 1 && abs(i) % 4 == 3){
           point(x,y);
-        println("2", i, j);
           continue;
         }
       }
