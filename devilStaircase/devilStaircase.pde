@@ -1,4 +1,4 @@
-int MAXITER = 1;
+int MAXITER = 100;
 void setup(){
   size(720, 720);
   background(0);
@@ -21,17 +21,17 @@ void draw(){
   background(0);
   float phi, out;
   out = width;
-  MAXITER ++;
   float oldX, oldY;
+  float K = map(frameCount, 1, 60*5, 0, 2);
   for (int i = 0; i < width; i++){
     phi = map(i, 0, width, 0, 1);
     oldY = out;
-    out = circleMap(1, phi);
+    out = circleMap(K, phi);
     out = map(out, 0, 1, height, 0);
     line(i-1, oldY, i, out); 
 
   }  
-    //saveFrame("out/img_###.png");
-    //if(frameCount > 60 * 5){exit();}
+    saveFrame("out/img_###.png");
+    if(frameCount > 60 * 5){exit();}
 }
 
