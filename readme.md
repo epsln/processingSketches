@@ -43,6 +43,9 @@ Creates plots of exponential sums of the form exp(i/a + i^2/b + i^3/c) with a,b,
 ## fractalFlame
 Simple implementation of the fractal flame algorithm.
 
+## gameOfLife
+Simple implementation of the game of life with random rules.
+
 ## gaussianIntegers
 An implementation of the Gaussian Integers. Plot the points whose rounded distance to the origin is prime. 
 
@@ -60,3 +63,4 @@ An implementation of the Ullam Spiral. Quite simple yet creates cool looking pat
 
 ## weierstrass
 Shows the plot of the Weierstrass function, continuous everywhere, differentiable nowhere.
+
